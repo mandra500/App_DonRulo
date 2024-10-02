@@ -13,7 +13,12 @@ class _ProfileTabState extends State<ProfileTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [_header(), _firtsBlok()]),
+      body: Column(children: [
+        GestureDetector(
+            onTap: () => Navigator.pushNamed(context, 'perfil-detail'),
+            child: _header()),
+        _firtsBlok()
+      ]),
     );
   }
 }

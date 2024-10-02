@@ -1,4 +1,5 @@
 import 'package:app_donrulo/src/funcionalidades/presentaciones/widgets_personalizados/Headers/header_text.dart';
+import 'package:app_donrulo/src/utils/estilos/box_decoraciones_shadows.dart';
 import 'package:flutter/material.dart';
 import 'package:app_donrulo/src/colors/colors.dart';
 
@@ -26,15 +27,8 @@ Widget favoritosCard({
     ),
     padding: const EdgeInsets.only(left: 5, top: 5, bottom: 20),
     width: double.infinity,
-    decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
-        color: Colors.white,
-        boxShadow: const [
-          BoxShadow(
-              color: Color.fromRGBO(210, 211, 215, 1.0),
-              offset: Offset(0, 5),
-              blurRadius: 10.0)
-        ]),
+    //se cambio todo el codigo de la decoración ahora viene desde utils
+    decoration: createBoxDecorationWithShadows(borderRadius: borderRadius),
     child: Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
