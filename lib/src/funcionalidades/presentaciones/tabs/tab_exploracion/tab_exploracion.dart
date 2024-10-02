@@ -26,7 +26,7 @@ class ExploreTab extends StatelessWidget {
                         child: headerText(
                             texto: 'Descubre nuevos sabores',
                             color: Colors.black,
-                            fontSize: 2.0),
+                            fontSize: 20.0),
                       ),
                       _sliderCards(),
                       _headers(context, 'Platillos top', "Mostrar todo"),
