@@ -89,20 +89,31 @@ class _CusinesFilterState extends State<CusinesFilter> {
 }
 
 Widget _roundedButtonFilter(Function()? func, bool isActive, String labelText) {
-  return ElevatedButton(
-    onPressed: func,
-    style: ElevatedButton.styleFrom(
-      elevation: 0.5,
-      backgroundColor: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(30.0),
-        side: BorderSide(color: isActive ? orange : gris),
+  return Container(
+    width: 100, // Establece el ancho que quieras para todos los botones
+    height: 40, // Establece la altura deseada para los botones
+    margin: const EdgeInsets.all(5.0),
+    child: ElevatedButton(
+      onPressed: func,
+      style: ElevatedButton.styleFrom(
+        elevation: 0.5,
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(25.0),
+          side: BorderSide(color: isActive ? orange : gris),
+        ),
       ),
-    ),
-    child: Text(
-      labelText,
-      style: TextStyle(
-        color: isActive ? orange : gris,
+      child: FittedBox(
+        // Se asegura de que el texto se adapte al tamaño del botón
+        fit: BoxFit.scaleDown,
+        child: Text(
+          labelText,
+          style: TextStyle(
+            color: isActive ? orange : gris,
+            fontSize:
+                16, // Tamaño de texto fijo, puedes ajustarlo según sea necesario
+          ),
+        ),
       ),
     ),
   );

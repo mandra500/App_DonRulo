@@ -1,3 +1,4 @@
+import 'package:app_donrulo/src/funcionalidades/presentaciones/detalles_perfil_page/perfil_detalle_page.dart';
 import 'package:flutter/material.dart';
 import 'package:app_donrulo/src/funcionalidades/presentaciones/bienvenida_page/bienvenida_page.dart';
 import 'package:app_donrulo/src/funcionalidades/presentaciones/login_page/login_page.dart';
@@ -20,5 +21,6 @@ final routes = <String, WidgetBuilder>{
   'filter': (BuildContext context) => const FilterPage(),
   'collections': (BuildContext context) => const CollectionsPage(),
   'collections-detail': (BuildContext context) => const CollectionDetailPage(),
-  'platos-detail': (BuildContext context) => const PlatosDetallesPage()
+  'platos-detail': (BuildContext context) => const PlatosDetallesPage(),
+  'perfil-detail': (BuildContext context) => const DetallePerfilPage(),
 };

@@ -14,6 +14,7 @@ void showAlertDialog(BuildContext context, ImageProvider<Object> imagePath,
             borderRadius: BorderRadius.all(Radius.circular(20.0))),
         backgroundColor: Colors.white,
         content: SizedBox(
+          //se cambio el tamaño del heigh
           height: 350,
           child: Column(
             children: [
@@ -31,6 +32,7 @@ void showAlertDialog(BuildContext context, ImageProvider<Object> imagePath,
                     fontSize: 20.0),
               ),
               Container(
+                //se cambio la propiedad .all a .only
                 margin: const EdgeInsets.only(top: 15.0),
                 child: Text(
                   headerSubTitle,
