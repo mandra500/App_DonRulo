@@ -14,7 +14,7 @@ void showAlertDialog(BuildContext context, ImageProvider<Object> imagePath,
             borderRadius: BorderRadius.all(Radius.circular(20.0))),
         backgroundColor: Colors.white,
         content: SizedBox(
-          height: 400,
+          height: 350,
           child: Column(
             children: [
               Image(
@@ -31,7 +31,7 @@ void showAlertDialog(BuildContext context, ImageProvider<Object> imagePath,
                     fontSize: 20.0),
               ),
               Container(
-                margin: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.only(top: 15.0),
                 child: Text(
                   headerSubTitle,
                   textAlign: TextAlign.center,
