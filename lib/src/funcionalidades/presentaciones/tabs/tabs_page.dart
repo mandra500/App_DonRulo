@@ -19,7 +19,10 @@ class _TabsPageState extends State<TabsPage> {
   void initState() {
     super.initState();
     Future.delayed(Duration.zero, () {
-      _pedirUbicacion(context);
+      //permite  que se ejecute el codigo solo si el widget esta en pantalla
+      if (mounted) {
+        _pedirUbicacion(context);
+      }
     });
   }
 
