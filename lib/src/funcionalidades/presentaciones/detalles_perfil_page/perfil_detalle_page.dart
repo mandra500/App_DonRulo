@@ -1,4 +1,5 @@
 import 'package:app_donrulo/src/colors/colors.dart';
+import 'package:app_donrulo/src/funcionalidades/presentaciones/detalles_perfil_page/componentes/textos_vistas.dart';
 import 'package:app_donrulo/src/funcionalidades/presentaciones/detalles_perfil_page/componentes/vista_avatar.dart';
 import 'package:app_donrulo/src/funcionalidades/presentaciones/widgets_personalizados/Botones_de_regresos/back_botton.dart';
 import 'package:app_donrulo/src/funcionalidades/presentaciones/widgets_personalizados/Headers/header_text.dart';
@@ -58,7 +59,7 @@ class _DetallePerfilPageState extends State<DetallePerfilPage> {
                     decoration: createBoxDecorationWithShadows(
                         borderRadius: borderRadius),
                     width: context.getScreenWidth(),
-                    height: context.getScreenHeight(multiplier: 0.6),
+                    height: context.getScreenHeight(multiplier: 0.65),
                     child: Column(
                       children: [
                         Transform.translate(
@@ -66,7 +67,8 @@ class _DetallePerfilPageState extends State<DetallePerfilPage> {
                           child: const VistaAvatar(
                               backgroundImage:
                                   'https://arsitektur-hmaunivbosowa.weebly.com/uploads/1/0/5/9/105902765/7_2_orig.png'),
-                        )
+                        ),
+                        TextFieldProfileVista()
                       ],
                     ),
                   )

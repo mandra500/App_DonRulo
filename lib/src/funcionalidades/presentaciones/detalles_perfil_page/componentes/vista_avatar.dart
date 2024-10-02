@@ -1,7 +1,6 @@
 import 'package:app_donrulo/src/colors/colors.dart';
 import 'package:app_donrulo/src/utils/estilos/box_decoraciones_shadows.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 
 @immutable
 class VistaAvatar extends StatelessWidget {
