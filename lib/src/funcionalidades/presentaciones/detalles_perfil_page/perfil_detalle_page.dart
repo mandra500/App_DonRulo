@@ -68,7 +68,7 @@ class _DetallePerfilPageState extends State<DetallePerfilPage> {
                               backgroundImage:
                                   'https://arsitektur-hmaunivbosowa.weebly.com/uploads/1/0/5/9/105902765/7_2_orig.png'),
                         ),
-                        TextFieldProfileVista()
+                        const TextFieldProfileVista()
                       ],
                     ),
                   )

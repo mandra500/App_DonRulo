@@ -6,8 +6,7 @@ import 'package:flutter/material.dart';
 class VistaAvatar extends StatelessWidget {
   final String backgroundImage;
 
-  const VistaAvatar({Key? key, required this.backgroundImage})
-      : super(key: key);
+  const VistaAvatar({super.key, required this.backgroundImage});
 
   @override
   Widget build(BuildContext context) {

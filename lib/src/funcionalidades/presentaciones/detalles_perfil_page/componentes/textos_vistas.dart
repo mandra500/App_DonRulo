@@ -3,7 +3,7 @@ import 'package:app_donrulo/src/utils/extensiones/screen_size.dart';
 import 'package:flutter/material.dart';
 
 class TextFieldProfileVista extends StatelessWidget {
-  //const TextFieldProfileVista({super.key});
+  const TextFieldProfileVista({super.key});
 
   @override
   Widget build(BuildContext context) {
