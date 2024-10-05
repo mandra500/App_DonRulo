@@ -5,7 +5,7 @@ abstract class BaseFirebaseServicio {
   static String baseUrl = "https://identitytoolkit.googleapis.com/v1/";
   static String registroEndpoint = "accounts:signUp?key=";
   static String inisesionEndpoint = "accounts:signInWithPassword?key=";
-  static String adminToken = "AIzaSyA6QHI0b3nmpnRTCAXbxrQHD9gbYMWv48w";
+  //static String adminToken = "AIzaSyA6QHI0b3nmpnRTCAXbxrQHD9gbYMWv48w";
 }
 
 abstract class RegistrarUsuarioService extends BaseFirebaseServicio{
